@@ -95,5 +95,5 @@ hr.tree
 
 test.score=predict(hr.tree.final,newdata=hr_test,type='vector')[,1]
 test.score
-write.csv(test.score,"mysubmission.csv2",row.names = F)
+
 
