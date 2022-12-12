@@ -9,19 +9,7 @@ hr_test$data = 'test'
 hr = rbind(hr_train,hr_test)
 
 library(dplyr)
-
 glimpse(hr)
-
-table(hr$sales)
-table(hr$Work_accident)
-table(hr$satisfaction_level)
-table(hr$last_evaluation)
-table(hr$number_project)
-table(hr$average_montly_hours)
-table(hr$time_spend_company)
-table(hr$promotion_last_5years)
-table(hr$salary)
-table(hr_train$left)
 
 lapply(hr,function(x) sum(is.na(x)))
 
